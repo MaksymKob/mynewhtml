@@ -5,8 +5,20 @@
 // Kebab-case
 // PascalCase
 
-const answers = [];
+const numberOfFilms = +prompt('How many film have you seen? ', '');
 
-answers[0] = prompt('What is your name?', '');
-answers[1] = prompt('What is your last name?', '');
-answers[2] = prompt('How old are you?', '');
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
+
+const a = prompt('One of your favourite film?', '');
+const b = prompt('Is it a good film?', '');
+const c = prompt('One of your favourite film?', '');
+const d = prompt('Is it a good film?', '');
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
